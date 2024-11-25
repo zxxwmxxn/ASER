@@ -3,11 +3,11 @@ clear;
 warning('off');
 
 %%%%%%%%%%%% You can choose one of the synthetic datasets for testing %%%%%%%%%%
-% DataName = "Two Moon";
-% [X, gnd] = make_moons(400, true, 0.08,110);
+DataName = "Two Moon";
+load 'data'\'Two Moon.mat'
 
-DataName = "Spheres";
-[X, gnd, centers] = make_Spheres(300, 2, 3, 0.2, [1, 5], true, 31);
+% DataName = "Spheres";
+% load 'data'\'Spheres.mat'
 
 %%%%%%%%%%%% Experimental Setup %%%%%%%%%%
 X = double(X);
